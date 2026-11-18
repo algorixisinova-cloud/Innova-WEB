@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ALGORIXIS INNOVA — Software a medida y SIG/ISO para PyMEs industriales</title>
+<meta name="description" content="Desarrollo sistemas integrados de gestión a medida para PyMEs industriales que necesitan certificar ISO 9001, 14001 o 45001. Software propio, trazabilidad completa.">
+<meta name="keywords" content="software a medida, SIG, ISO 9001, ISO 14001, ISO 45001, sistema integrado de gestión, PyMEs industriales, Tucumán, Argentina, CAPA, hallazgos">
+<meta name="author" content="ALGORIXIS INNOVA">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Spanish">
+<meta name="geo.region" content="AR-T">
+<meta name="geo.placename" content="Tucumán">
+<link rel="canonical" href="https://algorixis-innova.netlify.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://algorixis-innova.netlify.app/">
+<meta property="og:title" content="ALGORIXIS INNOVA — Software a medida y SIG/ISO">
+<meta property="og:description" content="Sistemas integrados de gestión a medida para PyMEs industriales. ISO 9001, 14001 y 45001.">
+<meta property="og:image" content="https://algorixis-innova.netlify.app/assets/sistema-panel.png">
+<meta property="og:image:width" content="1366">
+<meta property="og:image:height" content="768">
+<meta property="og:site_name" content="ALGORIXIS INNOVA">
+<meta property="og:locale" content="es_AR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ALGORIXIS INNOVA — Software a medida y SIG/ISO">
+<meta name="twitter:description" content="Sistemas integrados de gestión a medida para PyMEs industriales.">
+<meta name="twitter:image" content="https://algorixis-innova.netlify.app/assets/sistema-panel.png">
+
+<link rel="icon" type="image/png" href="assets/logo-transparent.png">
+<link rel="apple-touch-icon" href="assets/logo-transparent.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ALGORIXIS INNOVA",
+  "description": "Desarrollo de software a medida y Sistemas Integrados de Gestión (SIG) para PyMEs industriales.",
+  "url": "https://algorixis-innova.netlify.app/",
+  "logo": "https://algorixis-innova.netlify.app/assets/logo-transparent.png",
+  "image": "https://algorixis-innova.netlify.app/assets/sistema-panel.png",
+  "telephone": "+5493813414585",
+  "email": "algorixisinova@gmail.com",
+  "priceRange": "$",
+  "address": {"@type": "PostalAddress", "addressLocality": "Tucumán", "addressRegion": "Tucumán", "addressCountry": "AR"},
+  "areaServed": {"@type": "Country", "name": "Argentina"},
+  "sameAs": ["https://www.linkedin.com/company/algorixis-innova/", "https://www.instagram.com/algorixisinnova/"],
+  "founder": {"@type": "Person", "name": "Jonathan Aguirre"}
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <img src="assets/logo-transparent.png" alt="" class="preloader-logo">
+    <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+    <span class="preloader-text">ALGORIXIS INNOVA</span>
+  </div>
+</div>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="assets/logo-transparent.png" alt="ALGORIXIS INNOVA">
+      <span>ALGORIXIS <strong>INNOVA</strong></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#codigo" class="nav-link">Código</a>
+      <a href="#caso" class="nav-link">Caso</a>
+      <a href="#proceso" class="nav-link">Proceso</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="lamp lamp-1"></div>
+    <div class="lamp lamp-2"></div>
+    <div class="lamp lamp-3"></div>
+    <div class="grid-overlay"></div>
+    <div class="explosion" id="explosion"></div>
+  </div>
+  <div class="container">
+    <div class="hero-badge reveal">Software a medida · SIG/ISO · PyMEs industriales</div>
+    <h1 class="hero-title">
+      <span class="word">Software</span>
+      <span class="word">que</span>
+      <span class="word word-accent">ordena</span>
+      <span class="word">la</span>
+      <span class="word">gestión</span>
+      <span class="word">de</span>
+      <span class="word">tu</span>
+      <span class="word">planta.</span>
+    </h1>
+    <p class="lead reveal">Desarrollo sistemas integrados de gestión a medida para PyMEs industriales que necesitan certificar ISO o profesionalizar su operación. Sin plantillas genéricas. Sin licencias caras. Sin consultoras que no entienden tu piso de fábrica.</p>
+    <div class="hero-cta reveal">
+      <a href="#contacto" class="btn btn-primary magnetic">Hablemos de tu proyecto</a>
+      <a href="https://wa.me/5493813414585?text=Hola%2C%20quiero%20agendar%20una%20llamada%20de%2030%20minutos%20para%20hablar%20de%20mi%20proyecto." class="btn btn-ghost magnetic" target="_blank" rel="noopener">Agendar llamada <span class="arrow">→</span></a>
+    </div>
+    <div class="hero-chips reveal">
+      <span class="chip">+10 años en desarrollo</span>
+      <span class="chip">ISO 9001 / 14001 / 45001</span>
+      <span class="chip">Software 100% a medida</span>
+    </div>
+  </div>
+</section>
+
+<!-- ISO -->
+<section class="iso-strip">
+  <div class="container">
+    <div class="iso-head reveal">
+      <span class="eyebrow">Normas que domino</span>
+      <h2>Certificaciones que hablan tu idioma</h2>
+    </div>
+    <div class="iso-grid">
+      <div class="iso-card reveal">
+        <svg class="iso-seal" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="1"/>
+          <circle cx="60" cy="60" r="46" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 3"/>
+          <circle cx="60" cy="60" r="40" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <div class="iso-content">
+          <span class="iso-standard">ISO</span>
+          <span class="iso-number">9001</span>
+          <span class="iso-name">Sistema de Gestión de Calidad</span>
+        </div>
+      </div>
+      <div class="iso-card reveal">
+        <svg class="iso-seal" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="1"/>
+          <circle cx="60" cy="60" r="46" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 3"/>
+          <circle cx="60" cy="60" r="40" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <div class="iso-content">
+          <span class="iso-standard">ISO</span>
+          <span class="iso-number">14001</span>
+          <span class="iso-name">Gestión Ambiental</span>
+        </div>
+      </div>
+      <div class="iso-card reveal">
+        <svg class="iso-seal" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="1"/>
+          <circle cx="60" cy="60" r="46" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 3"/>
+          <circle cx="60" cy="60" r="40" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <div class="iso-content">
+          <span class="iso-standard">ISO</span>
+          <span class="iso-number">45001</span>
+          <span class="iso-name">Seguridad y Salud en el Trabajo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS BENTO -->
+<section id="servicios" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Servicios</span>
+      <h2>Qué hacemos, concretamente</h2>
+      <p class="section-sub">Tres formas de trabajar juntos, según el punto en el que esté tu empresa.</p>
+    </div>
+    <div class="bento">
+      <article class="bento-card bento-large glow-card reveal">
+        <div class="bento-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Software a medida</h3>
+        <p>Desarrollo de sistemas para calidad, producción, mantenimiento o cualquier área que hoy trabaje con planillas sueltas y papeles.</p>
+        <ul class="bento-list">
+          <li>Relevamiento y diseño funcional</li>
+          <li>Desarrollo e implementación</li>
+          <li>Integración con Google Sheets y Drive</li>
+          <li>Capacitación y puesta en marcha</li>
+        </ul>
+        <span class="bento-tag">Servicio principal</span>
+      </article>
+
+      <article class="bento-card glow-card reveal">
+        <div class="bento-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <h3>Consultoría SIG / ISO</h3>
+        <p>Diagnóstico, armado de documentación, preparación para auditoría y mantenimiento del Sistema Integrado de Gestión.</p>
+        <ul class="bento-list">
+          <li>Diagnóstico inicial</li>
+          <li>Procedimientos y registros</li>
+          <li>Preparación de auditoría</li>
+        </ul>
+      </article>
+
+      <article class="bento-card glow-card reveal">
+        <div class="bento-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Implementación del SIG</h3>
+        <p>Sistema Integrado de Gestión sobre software propio ya probado, adaptado a los procesos de tu planta.</p>
+        <ul class="bento-list">
+          <li>Adaptación a tu operación</li>
+          <li>Migración de datos</li>
+          <li>Roles y permisos</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee-strip">
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Python 3.12</span><span>·</span>
+      <span>Flask 3.1</span><span>·</span>
+      <span>SQLite WAL</span><span>·</span>
+      <span>Waitress</span><span>·</span>
+      <span>Google Sheets API</span><span>·</span>
+      <span>Google Drive API</span><span>·</span>
+      <span>Apps Script</span><span>·</span>
+      <span>bcrypt</span><span>·</span>
+      <span>HTML5</span><span>·</span>
+      <span>CSS3</span><span>·</span>
+      <span>JavaScript</span><span>·</span>
+      <span>ISO 9001</span><span>·</span>
+      <span>ISO 14001</span><span>·</span>
+      <span>ISO 45001</span><span>·</span>
+      <span>Python 3.12</span><span>·</span>
+      <span>Flask 3.1</span><span>·</span>
+      <span>SQLite WAL</span><span>·</span>
+      <span>Waitress</span><span>·</span>
+      <span>Google Sheets API</span><span>·</span>
+      <span>Google Drive API</span><span>·</span>
+      <span>Apps Script</span><span>·</span>
+      <span>bcrypt</span><span>·</span>
+      <span>HTML5</span><span>·</span>
+      <span>CSS3</span><span>·</span>
+      <span>JavaScript</span><span>·</span>
+      <span>ISO 9001</span><span>·</span>
+      <span>ISO 14001</span><span>·</span>
+      <span>ISO 45001</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- MULTI-DEVICE -->
+<section id="dispositivos" class="section devices-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Un sistema, todos tus dispositivos</span>
+      <h2>Tu operación en la palma de la mano</h2>
+      <p class="section-sub">El sistema funciona en la oficina, en la planta, en el celular del supervisor y en la tablet del responsable de calidad. Misma información, misma trazabilidad, en cualquier lugar.</p>
+    </div>
+
+    <div class="devices-stage reveal">
+
+      <!-- CODE WINDOW flotante -->
+      <div class="code-window" aria-hidden="true">
+        <div class="code-header">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="code-title">models.py</span>
+        </div>
+        <pre class="code-body"><code><span class="tk-kw">class</span> <span class="tk-fn">Hallazgo</span>(db.Model):
+    id = db.Column(db.Integer, primary_key=<span class="tk-str">True</span>)
+    iso_clause = db.Column(db.String(<span class="tk-var">8</span>))
+    descripcion = db.Column(db.Text)
+    estado = db.Column(db.String(<span class="tk-var">20</span>))
+    responsable_id = db.Column(db.Integer,
+        db.ForeignKey(<span class="tk-str">'user.id'</span>))
+    fecha_alta = db.Column(db.DateTime,
+        default=datetime.utcnow)</code></pre>
+      </div>
+
+      <!-- Laptop (centro) -->
+      <div class="device device-laptop">
+        <div class="device-screen">
+          <img src="assets/sistema-operacion.png" alt="Operación ISO 8">
+        </div>
+        <div class="laptop-base"></div>
+      </div>
+
+      <!-- Desktop (izquierda, detrás) -->
+      <div class="device device-desktop">
+        <div class="device-screen">
+          <div class="device-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="device-url">sig-inmetal.local / panel</span>
+          </div>
+          <img src="assets/sistema-panel.png" alt="Panel de trabajo">
+        </div>
+        <div class="desktop-stand"></div>
+      </div>
+
+      <!-- Tablet (derecha) -->
+      <div class="device device-tablet">
+        <div class="device-screen">
+          <img src="assets/sistema-mejora.png" alt="Mejora ISO 10">
+        </div>
+      </div>
+
+      <!-- Celular (frente) -->
+      <div class="device device-phone">
+        <div class="phone-notch"></div>
+        <div class="device-screen">
+          <img src="assets/sistema-planificacion.png" alt="Planificación ISO 6">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="devices-legend reveal">
+      <div class="legend-item"><span class="legend-dot"></span> Escritorio · Panel general</div>
+      <div class="legend-item"><span class="legend-dot"></span> Notebook · Operación en planta</div>
+      <div class="legend-item"><span class="legend-dot"></span> Tablet · Mejora continua</div>
+      <div class="legend-item"><span class="legend-dot"></span> Celular · Planificación y SST</div>
+    </div>
+  </div>
+</section>
+<!-- /MULTI-DEVICE -->
+
+<!-- SISTEMA EN ACCIÓN -->
+<section id="sistema" class="section section-dark system-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">El sistema en acción</span>
+      <h2>Así se ve el sistema por dentro</h2>
+      <p class="section-sub">Capturas reales del sistema en producción. Navegación modular alineada a ISO 9001, 14001 y 45001, con trazabilidad completa de punta a punta.</p>
+    </div>
+
+    <div class="system-showcase reveal">
+      <div class="browser-frame">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="browser-url">
+            <span class="browser-lock">🔒</span>
+            <span>sig-inmetal.local / <span id="browserPath">panel</span></span>
+          </div>
+        </div>
+        <div class="browser-viewport">
+          <img id="systemMainImg"
+               src="assets/sistema-panel.png"
+               alt="Panel de trabajo del sistema"
+               class="system-main-img">
+          <div class="browser-fade"></div>
+        </div>
+      </div>
+
+      <div class="system-tabs" id="systemTabs">
+        <button class="system-tab active" data-img="sistema-panel.png" data-path="panel">
+          <div class="tab-thumb"><img src="assets/sistema-panel.png" alt=""></div>
+          <div class="tab-info">
+            <strong>Panel de Trabajo</strong>
+            <span>Vista general del SIG</span>
+          </div>
+        </button>
+        <button class="system-tab" data-img="sistema-operacion.png" data-path="operacion">
+          <div class="tab-thumb"><img src="assets/sistema-operacion.png" alt=""></div>
+          <div class="tab-info">
+            <strong>Operación · ISO 8</strong>
+            <span>OT, Kanban, Fabricación</span>
+          </div>
+        </button>
+        <button class="system-tab" data-img="sistema-mejora.png" data-path="mejora">
+          <div class="tab-thumb"><img src="assets/sistema-mejora.png" alt=""></div>
+          <div class="tab-info">
+            <strong>Mejora · ISO 10</strong>
+            <span>Hallazgos y CAPA</span>
+          </div>
+        </button>
+        <button class="system-tab" data-img="sistema-planificacion.png" data-path="planificacion">
+          <div class="tab-thumb"><img src="assets/sistema-planificacion.png" alt=""></div>
+          <div class="tab-info">
+            <strong>Planificación · ISO 6</strong>
+            <span>Riesgos, aspectos, SST</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TERMINAL -->
+<section id="codigo" class="section section-dark">
+  <div class="container">
+    <div class="code-grid">
+      <div class="code-text reveal">
+        <span class="eyebrow">En producción</span>
+        <h2>Código real.<br>Sistema real.</h2>
+        <p>Esto no es una maqueta. Es un fragmento del backend del sistema que hoy corre en producción. Python + Flask, SQLite, autenticación segura, integraciones con Google APIs.</p>
+        <p>Cada módulo está documentado, testeado y mantenido por alguien que entiende tanto el código como el proceso industrial que hay detrás.</p>
+        <div class="code-tags">
+          <span>Python 3.12</span><span>Flask 3.1</span><span>SQLite WAL</span><span>Waitress</span><span>Google APIs</span>
+        </div>
+      </div>
+      <div class="terminal reveal" id="terminalBox">
+        <div class="terminal-header">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">sig-inmetal / app.py</span>
+        </div>
+        <pre class="terminal-body"><code id="terminalCode"></code><span class="terminal-cursor">▊</span></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASO -->
+<section id="caso" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Caso de éxito</span>
+      <h2>SIG-INMETAL</h2>
+      <p class="section-sub">Sistema Integrado de Gestión desarrollado a medida para una empresa metalúrgica argentina fundada en 1977.</p>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat reveal"><span class="stat-num" data-counter="42">0</span><span class="stat-label">Módulos en producción</span></div>
+      <div class="stat reveal"><span class="stat-num" data-counter="22">0</span><span class="stat-label">Usuarios activos</span></div>
+      <div class="stat reveal"><span class="stat-num" data-counter="13">0</span><span class="stat-label">Roles diferenciados</span></div>
+      <div class="stat reveal"><span class="stat-num" data-counter="5">0</span><span class="stat-label">Integraciones Sheets</span></div>
+    </div>
+
+    <div class="case-grid">
+      <div class="case-info reveal">
+        <h3>Contexto</h3>
+        <p>Una PyME metalúrgica con más de 45 años de trayectoria necesitaba digitalizar su Sistema Integrado de Gestión y dejar atrás las planillas sueltas, los registros en papel y la información dispersa.</p>
+        <h3>Qué se construyó</h3>
+        <p>Un sistema propio, desarrollado desde cero, que hoy corre en producción y gestiona la operación diaria de calidad, producción y documentación.</p>
+        <h3>Resultado</h3>
+        <ul class="case-list">
+          <li><strong>Kanban de producción</strong> con sincronización a Google Sheets</li>
+          <li><strong>Módulo CAPA</strong> (Acciones Correctivas y Preventivas)</li>
+          <li><strong>Módulo de Hallazgos</strong> alineado a ISO 9001 / 14001 / 45001</li>
+          <li><strong>Búsqueda en Drive</strong> por nombre de archivo</li>
+          <li><strong>Informes profesionales</strong> generados vía Apps Script</li>
+        </ul>
+      </div>
+      <aside class="case-stack reveal">
+        <h3>Stack técnico</h3>
+        <div class="stack-item"><span>Backend</span><strong>Python 3.12 + Flask 3.1</strong></div>
+        <div class="stack-item"><span>Base de datos</span><strong>SQLite (modo WAL)</strong></div>
+        <div class="stack-item"><span>Frontend</span><strong>HTML5 + JS vanilla + CSS</strong></div>
+        <div class="stack-item"><span>Servidor</span><strong>Waitress sobre Windows</strong></div>
+        <div class="stack-item"><span>Autenticación</span><strong>bcrypt + tokens UUID</strong></div>
+        <div class="stack-item"><span>Integraciones</span><strong>Google Sheets + Drive API</strong></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO CON PINNING -->
+<section id="proceso" class="section section-dark process-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2>Un proceso claro, sin sorpresas</h2>
+      <p class="section-sub">Cinco etapas. En cada una trabajamos con entregables concretos y aprobación tuya antes de pasar a la siguiente.</p>
+    </div>
+    <div class="process-pin" id="processPin">
+      <div class="process-steps">
+        <div class="process-step" data-step="1">
+          <div class="process-num">01</div>
+          <h3>Relevamiento</h3>
+          <p>Nuestro equipo visita la planta, entiende cómo trabajan hoy y detecta los puntos de dolor reales.</p>
+        </div>
+        <div class="process-step" data-step="2">
+          <div class="process-num">02</div>
+          <h3>Propuesta</h3>
+          <p>Definimos alcance, tiempos, inversión y entregables. Todo por escrito antes de arrancar.</p>
+        </div>
+        <div class="process-step" data-step="3">
+          <div class="process-num">03</div>
+          <h3>Desarrollo</h3>
+          <p>Construimos por módulos, con entregas parciales para que veas el avance desde el primer día.</p>
+        </div>
+        <div class="process-step" data-step="4">
+          <div class="process-num">04</div>
+          <h3>Implementación</h3>
+          <p>Ponemos en marcha, migramos los datos, configuramos roles y capacitamos a tu equipo.</p>
+        </div>
+        <div class="process-step" data-step="5">
+          <div class="process-num">05</div>
+          <h3>Acompañamiento</h3>
+          <p>Acompañamos post-implementación y aplicamos mejoras continuas sobre el sistema en producción.</p>
+        </div>
+      </div>
+      <div class="process-visual">
+        <div class="process-circle">
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="88" stroke="#1e2836" stroke-width="2" fill="none"/>
+            <circle class="process-progress" cx="100" cy="100" r="88" stroke="#f59e0b" stroke-width="2" fill="none"
+              stroke-dasharray="553" stroke-dashoffset="553" transform="rotate(-90 100 100)"/>
+          </svg>
+          <span class="process-current" id="processCurrent">01</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section testimonials-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Testimonios</span>
+      <h2>Lo que dicen quienes ya trabajaron conmigo</h2>
+    </div>
+    <div class="swiper testimonialSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimonial">
+          <p class="testimonial-text">"El equipo de ALGORIXIS entendió desde el primer día cómo trabajamos. El sistema cambió la forma en que gestionamos la calidad: lo que antes eran carpetas y planillas sueltas hoy está en un solo lugar, accesible para todos."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <strong>Responsable de Calidad</strong>
+              <span>PyME metalúrgica · Tucumán</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide testimonial">
+          <p class="testimonial-text">"Conocen el piso de fábrica. No venden humo: muestran el sistema funcionando y lo adaptan a cómo trabajás vos, no al revés. Se nota que están del lado del cliente."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">G</div>
+            <div>
+              <strong>Gerente de Producción</strong>
+              <span>Industria manufacturera</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide testimonial">
+          <p class="testimonial-text">"Pasamos la auditoría de certificación sin sobresaltos. La documentación y los registros estaban todos digitalizados y trazables, y el acompañamiento del equipo fue clave."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <strong>Auditora Interna</strong>
+              <span>Sistema Integrado de Gestión</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section section-dark">
+  <div class="container">
+    <div class="about">
+      <div class="about-text reveal">
+        <span class="eyebrow">El equipo</span>
+        <h2>Detrás de ALGORIXIS INNOVA</h2>
+        <p class="about-role">Un equipo que entiende el piso de fábrica</p>
+        <p>ALGORIXIS INNOVA es un equipo de profesionales formado en el corazón de la industria metalúrgica argentina, donde aprendimos que la calidad no es un documento, sino una cultura. Conocemos el piso de fábrica, las auditorías, los reclamos de clientes y la presión de mantener una certificación ISO al día.</p>
+        <p>Esa experiencia es la que aplicamos en cada proyecto: no diseñamos software desde un escritorio, lo diseñamos desde el problema real del cliente. Porque lo vivimos.</p>
+        <p>Nacimos para llevar ese conocimiento a otras PyMEs industriales que necesitan ordenar su gestión sin depender de consultoras que no entienden su operación, ni de sistemas genéricos que no se adaptan a su realidad.</p>
+      </div>
+      <div class="about-tags reveal">
+        <span class="tag">ISO 9001</span><span class="tag">ISO 14001</span><span class="tag">ISO 45001</span>
+        <span class="tag">Sistemas Integrados de Gestión</span><span class="tag">CAPA</span>
+        <span class="tag">Auditorías internas</span><span class="tag">PyMEs industriales</span><span class="tag">Desarrollo a medida</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Lo que suelen preguntarnos antes de arrancar</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>¿Cuánto tarda un proyecto típico?</summary>
+        <div class="faq-content"><p>Depende del alcance. Un módulo simple puede estar operativo en 3-4 semanas. Un sistema integrado completo puede llevar 3-6 meses. En la propuesta siempre definimos plazos por etapa.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Qué pasa si mi empresa no está certificando ISO?</summary>
+        <div class="faq-content"><p>No es requisito. Muchas PyMEs industriales quieren ordenar su operación interna sin buscar certificación. El software se adapta igual: el foco está en resolver el problema real, no en cumplir un sello.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Tengo que instalar algo en mis servidores?</summary>
+        <div class="faq-content"><p>El sistema corre en Windows sobre Waitress, así que se puede instalar en un servidor propio de la empresa o en una PC de escritorio. Todo queda dentro de tu infraestructura, sin dependencia de la nube si no lo querés.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Qué incluye el soporte después de la implementación?</summary>
+        <div class="faq-content"><p>Acompañamiento en la puesta en marcha, capacitación al equipo y ajustes sobre los módulos existentes. Los desarrollos nuevos se cotizan aparte.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Trabajás solo con empresas de Tucumán?</summary>
+        <div class="faq-content"><p>No. Trabajo con PyMEs industriales de todo el país. La implementación inicial conviene hacerla presencial, pero el acompañamiento posterior puede ser remoto.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- PARTNERS -->
+<section id="partners" class="section section-dark partners-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Alianza estratégica</span>
+      <h2>Trabajamos con quienes ya confían en la industria</h2>
+      <p class="section-sub">ALGORIXIS INNOVA articula con Euler Consultora, una consultora con más de 20 años de experiencia en gestión industrial, higiene y seguridad, calidad y supervisión de obras. Juntos llevamos consultoría en planta + software a medida a PyMEs de todo el país.</p>
+    </div>
+
+    <div class="partner-main reveal">
+      <div class="partner-logo-box">
+        <img src="assets/euler-logo-transparent.png" alt="Euler Consultora">
+      </div>
+      <div class="partner-info">
+        <span class="partner-tag">Partner estratégico</span>
+        <h3>Euler Consultora</h3>
+        <p>Más de 20 años de gestión en empresas nacionales y multinacionales. Especialistas en higiene y seguridad, calidad, producción, y gestión de proyectos y obras. Presencia en Tucumán y Salta.</p>
+        <ul class="partner-services">
+          <li>Higiene y Seguridad en el trabajo</li>
+          <li>ISO 9001 · ISO 22000 · HACCP · BPM</li>
+          <li>Gestión de producción y calidad</li>
+          <li>Supervisión de obras y paradas de planta</li>
+        </ul>
+        <a href="https://www.eulerconsultora.com.ar" target="_blank" rel="noopener" class="partner-link">
+          Visitar sitio de Euler Consultora <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="clientes-wrap reveal">
+      <div class="clientes-title">
+        <span class="eyebrow">Clientes que confían en la alianza</span>
+      </div>
+      <div class="clientes-marquee">
+        <div class="clientes-grid">
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/inmetal.png" alt="IN-METAL"></div><span class="cliente-name">IN-METAL</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/arca-continental.png" alt="Arca Continental"></div><span class="cliente-name">Arca Continental</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/coca-cola.png" alt="Coca-Cola"></div><span class="cliente-name">Coca-Cola</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/ypf-luz.png" alt="YPF Luz"></div><span class="cliente-name">YPF Luz</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/sulzer.png" alt="Sulzer"></div><span class="cliente-name">Sulzer</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/lesaffre.png" alt="Lesaffre"></div><span class="cliente-name">Lesaffre</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/alpla.png" alt="Alpla"></div><span class="cliente-name">Alpla</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/gb-ingredients.png" alt="GB Ingredients"></div><span class="cliente-name">GB Ingredients</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/swiss-medical.png" alt="Swiss Medical"></div><span class="cliente-name">Swiss Medical</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/ayassa-frombella.png" alt="Ayassa Frombella"></div><span class="cliente-name">Ayassa Frombella</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/wells.png" alt="Wells"></div><span class="cliente-name">Wells</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/ingenio-famailla.png" alt="Ingenio Famaillá"></div><span class="cliente-name">Ingenio Famaillá</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/mundo-house.png" alt="Mundo House"></div><span class="cliente-name">Mundo House</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/inmetal.png" alt="IN-METAL"></div><span class="cliente-name">IN-METAL</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/arca-continental.png" alt="Arca Continental"></div><span class="cliente-name">Arca Continental</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/coca-cola.png" alt="Coca-Cola"></div><span class="cliente-name">Coca-Cola</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/ypf-luz.png" alt="YPF Luz"></div><span class="cliente-name">YPF Luz</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/sulzer.png" alt="Sulzer"></div><span class="cliente-name">Sulzer</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/lesaffre.png" alt="Lesaffre"></div><span class="cliente-name">Lesaffre</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/alpla.png" alt="Alpla"></div><span class="cliente-name">Alpla</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/gb-ingredients.png" alt="GB Ingredients"></div><span class="cliente-name">GB Ingredients</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/swiss-medical.png" alt="Swiss Medical"></div><span class="cliente-name">Swiss Medical</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/ayassa-frombella.png" alt="Ayassa Frombella"></div><span class="cliente-name">Ayassa Frombella</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/wells.png" alt="Wells"></div><span class="cliente-name">Wells</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/ingenio-famailla.png" alt="Ingenio Famaillá"></div><span class="cliente-name">Ingenio Famaillá</span></div>
+          <div class="cliente-card"><div class="cliente-logo"><img src="assets/clientes/mundo-house.png" alt="Mundo House"></div><span class="cliente-name">Mundo House</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /PARTNERS -->
+
+<!-- CALCULADORA ROI -->
+<section id="calculadora" class="section section-dark calc-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Calculadora</span>
+      <h2>¿Cuánto te cuesta no digitalizar?</h2>
+      <p class="section-sub">Ajustá los valores con tu realidad. La calculadora estima cuánto podés ahorrar al año automatizando la gestión de calidad, producción y documentación.</p>
+    </div>
+
+    <div class="calc-grid reveal">
+      <!-- Inputs -->
+      <div class="calc-inputs">
+        <div class="calc-input-group">
+          <label for="calcEmpleados">Empleados que usan planillas o papel hoy</label>
+          <div class="calc-range-row">
+            <input type="range" id="calcEmpleados" min="1" max="100" value="8" step="1">
+            <output id="calcEmpleadosOut">8</output>
+          </div>
+        </div>
+
+        <div class="calc-input-group">
+          <label for="calcHoras">Horas semanales perdidas por persona en tareas manuales</label>
+          <div class="calc-range-row">
+            <input type="range" id="calcHoras" min="1" max="30" value="6" step="0.5">
+            <output id="calcHorasOut">6 h</output>
+          </div>
+        </div>
+
+        <div class="calc-input-group">
+          <label for="calcCosto">Costo hora promedio (USD)</label>
+          <div class="calc-range-row">
+            <input type="range" id="calcCosto" min="3" max="50" value="10" step="0.5">
+            <output id="calcCostoOut">USD 10</output>
+          </div>
+        </div>
+
+        <div class="calc-input-group">
+          <label>¿Cuántas auditorías o inspecciones tenés por año?</label>
+          <div class="calc-pills" id="calcAuditorias">
+            <button type="button" class="calc-pill" data-value="1">1-2</button>
+            <button type="button" class="calc-pill active" data-value="3">3-4</button>
+            <button type="button" class="calc-pill" data-value="6">5-6</button>
+            <button type="button" class="calc-pill" data-value="10">Más de 6</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resultado -->
+      <div class="calc-result">
+        <div class="calc-result-label">Ahorro estimado</div>
+        <div class="calc-result-value">
+          <span class="calc-currency">USD</span>
+          <span class="calc-number" id="calcResult">0</span>
+        </div>
+        <div class="calc-result-period">por año</div>
+
+        <div class="calc-breakdown">
+          <div class="calc-breakdown-row">
+            <span>Horas recuperadas / año</span>
+            <strong id="calcHorasTotal">0 h</strong>
+          </div>
+          <div class="calc-breakdown-row">
+            <span>Costo del tiempo perdido</span>
+            <strong id="calcCostoTiempo">USD 0</strong>
+          </div>
+          <div class="calc-breakdown-row">
+            <span>Ahorro en auditorías</span>
+            <strong id="calcCostoAuditoria">USD 0</strong>
+          </div>
+        </div>
+
+        <a href="#contacto" class="btn btn-primary btn-full calc-cta">Quiero recuperar ese tiempo →</a>
+        <p class="calc-note">Estimación orientativa basada en proyectos reales. El ahorro final depende del alcance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /CALCULADORA ROI -->
+
+<!-- CONTACTO -->
+<section id="contacto" class="section section-dark">
+  <div class="container">
+    <div class="contact">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Contacto</span>
+        <h2>¿Arrancamos?</h2>
+        <p>Contame brevemente qué necesita tu empresa. Te respondo en menos de 24 horas con los próximos pasos.</p>
+        <a href="https://wa.me/5493813414585?text=Hola%2C%20quiero%20agendar%20una%20llamada%20de%2030%20minutos%20para%20hablar%20de%20mi%20proyecto." class="btn btn-primary magnetic agendar-btn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Agendar llamada de 30 min
+        </a>
+        <ul class="contact-list">
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/5493813414585">+54 9 381 3414-585</a></li>
+          <li><strong>Email:</strong> <a href="mailto:algorixisinova@gmail.com">algorixisinova@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/algorixis-innova/home/" target="_blank" rel="noopener">linkedin.com/company/algorixis-innova</a></li>
+          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/algorixisinnova/" target="_blank" rel="noopener">@algorixisinnova</a></li>
+          <li><strong>Ubicación:</strong> Tucumán, Argentina — atiendo todo el país</li>
+        </ul>
+      </div>
+      <form class="contact-form reveal" action="https://formsubmit.co/ajax/algorixisinova@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo contacto desde ALGORIXIS INNOVA">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="float-field">
+          <input type="text" name="nombre" id="f-nombre" required placeholder=" ">
+          <label for="f-nombre">Nombre</label>
+        </div>
+        <div class="float-field">
+          <input type="text" name="empresa" id="f-empresa" placeholder=" ">
+          <label for="f-empresa">Empresa</label>
+        </div>
+        <div class="float-field">
+          <input type="email" name="email" id="f-email" required placeholder=" ">
+          <label for="f-email">Email</label>
+        </div>
+        <div class="float-field">
+          <input type="tel" name="telefono" id="f-tel" placeholder=" ">
+          <label for="f-tel">Teléfono / WhatsApp</label>
+        </div>
+        <div class="float-field">
+          <textarea name="mensaje" id="f-msg" rows="5" required placeholder=" "></textarea>
+          <label for="f-msg">Contame qué necesitás</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full magnetic">Enviar mensaje</button>
+        <p class="form-note">Tus datos no se comparten con terceros.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-transparent.png" alt="ALGORIXIS INNOVA">
+      <span>ALGORIXIS <strong>INNOVA</strong></span>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/algorixis-innova/home/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/algorixisinnova/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="mailto:algorixisinova@gmail.com" aria-label="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">© 2026 ALGORIXIS INNOVA · Tucumán, Argentina</p>
+    <p class="footer-tag">Software a medida · SIG / ISO para PyMEs industriales</p>
+  </div>
+</footer>
+
+<!-- LIBS -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+
+
+<!-- GLOBAL EXTRAS -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<nav class="side-nav" id="sideNav" aria-label="Navegación lateral">
+  <a href="#servicios" data-section="servicios" aria-label="Servicios"></a>
+  <a href="#dispositivos" data-section="dispositivos" aria-label="Dispositivos"></a>
+  <a href="#codigo" data-section="codigo" aria-label="Código"></a>
+  <a href="#caso" data-section="caso" aria-label="Caso"></a>
+  <a href="#proceso" data-section="proceso" aria-label="Proceso"></a>
+  <a href="#sobre" data-section="sobre" aria-label="Sobre"></a>
+  <a href="#faq" data-section="faq" aria-label="FAQ"></a>
+  <a href="#contacto" data-section="contacto" aria-label="Contacto"></a>
+</nav>
+
+<a href="https://wa.me/5493813414585?text=Hola%2C%20vi%20la%20web%20de%20ALGORIXIS%20y%20quiero%20consultar%20por%20un%20proyecto."
+   class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp">
+  <span class="wa-tooltip">¿Hablamos? Respondo en minutos</span>
+  <span class="wa-pulse"></span>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+  <svg class="btt-progress" viewBox="0 0 44 44">
+    <circle cx="22" cy="22" r="20" fill="none" stroke-width="2" stroke-dasharray="125.6" stroke-dashoffset="125.6"/>
+  </svg>
+</button>
+<!-- /GLOBAL EXTRAS -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
